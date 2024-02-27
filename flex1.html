@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flex 1</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        width: 1200px;
+        margin: auto;
+      }
+      main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      header h1 {
+        background-color: #585858;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      footer h1 {
+        background-color: #afafaf;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .aside {
+        width: 400px;
+        background-color: #c1c1fd;
+        height: 30vh;
+        text-align: center;
+        padding-top: 20%;
+      }
+      .section {
+        width: 800px;
+        background-color: #fdc1e7;
+        height: 30vh;
+        text-align: center;
+        padding-top: 20%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Header ( 1200 )</h1>
+    </header>
+    <main>
+      <div class="aside"><h2>aside ( 400 )</h2></div>
+      <div class="section"><h2>section ( 800 )</h2></div>
+    </main>
+    <footer><h1>Footer ( 1200 )</h1></footer>
+  </body>
+</html>

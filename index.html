@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>c-19 flex</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      button {
+        cursor: pointer;
+      }
+
+      body {
+        width: 1200px;
+        margin: auto;
+      }
+      main {
+        height: 100vh;
+        padding: 1rem 0;
+        display: flex;
+        justify-content: center;
+      }
+      header {
+        padding: 0.5rem 0rem;
+        width: 100%;
+        background-color: #d2b617;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      nav {
+        width: 55%;
+      }
+      nav ul {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        background-color: #d2b617;
+        list-style: none;
+        border-radius: 10px;
+      }
+      nav ul li {
+        /* border: 1px solid black; */
+        padding: 0.5rem 1.5rem;
+      }
+      nav ul li:hover {
+        background-color: rgb(205, 165, 91);
+        border-radius: 50px;
+        cursor: pointer;
+      }
+
+      nav ul :nth-child(1) {
+        order: -5;
+      }
+      nav ul :nth-child(2) {
+        order: -4;
+      }
+      nav ul :nth-child(3) {
+        order: -3;
+      }
+      nav ul :nth-child(4) {
+        order: 1;
+      }
+      nav ul :nth-child(6) {
+        order: -1;
+      }
+      nav ul :nth-child(7) {
+        order: 2;
+      }
+      .search-body input {
+        padding: 7px 23px;
+        border-radius: 15px;
+        background-color: black;
+        color: white;
+      }
+      .search-body input:focus {
+        width: 401px;
+      }
+      .search-body button {
+        padding: 7px 14px;
+        border-radius: 15px;
+        background-color: black;
+        color: white;
+        margin-right: 5px;
+      }
+      .search-body button:hover {
+        background-color: #a0596d;
+        transition: 1s;
+        border-radius: 15px 15px 0 15px;
+      }
+      .logo {
+        background-color: #5c5a5a;
+        color: white;
+      }
+      .logo h1 {
+        padding: 0.5rem 2rem;
+      }
+      .left {
+        width: 75%;
+        padding: 1rem;
+      }
+      .right {
+        width: 25%;
+        padding: 1rem;
+      }
+      .right h3 {
+        padding: 1rem 0;
+      }
+      .para-body {
+        display: flex;
+        justify-content: space-between;
+      }
+      .para1 {
+        border: 2px solid rgba(61, 60, 60, 0.501);
+        padding: 1rem;
+      }
+      .para1 h2 {
+        padding: 1rem 0;
+      }
+      .para2 {
+        padding: 23px;
+      }
+      .para3 {
+        padding: 23px;
+      }
+      .box {
+        max-width: 128px;
+        height: 128px;
+        border: 1px solid #7a7676;
+        margin: 5px;
+        flex: 1 0 50%;
+      }
+      .box h4 {
+        margin-top: 45%;
+        text-align: center;
+      }
+      .flex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .box-body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: row wrap;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="logo">
+      <h1>Altum</h1>
+    </div>
+    <header>
+      <nav>
+        <ul>
+          <li>item 1</li>
+          <li>item 2</li>
+          <li>item 3</li>
+          <li>item 4</li>
+          <li>item 5</li>
+          <li>item 6</li>
+          <li>item 7</li>
+        </ul>
+      </nav>
+      <div class="search-body">
+        <input type="search" class="search" placeholder="🔎 Search" />
+        <button>search</button>
+      </div>
+    </header>
+    <main>
+      <div class="left">
+        <div class="para1">
+          <h2>Main Content</h2>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
+          voluptatibus consectetur impedit nisi quo amet nulla excepturi,
+          accusantium provident nostrum cum, necessitatibus reprehenderit ad
+          fugiat ipsum illum optio totam dolore. Iste itaque dolorem, fugit
+          tenetur voluptatem quidem et laboriosam blanditiis corrupti commodi!
+          Voluptatem provident voluptates, suscipit velit sequi placeat magnam!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda,
+          esse aspernatur. Pariatur aperiam nam voluptatum fugiat perferendis!
+          Nisi ipsa sapiente dolor deserunt repudiandae. Quos rem ullam illum,
+          atque maxime quibusdam aliquam labore expedita dolores voluptates a
+          quas officiis veritatis omnis amet? Incidunt suscipit, deleniti odit
+          vitae recusandae libero amet in.
+        </div>
+        <div class="para-body">
+          <div class="para2">
+            <h2>Heading</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+              veniam, esse dolores quas ut voluptas ipsum aut tempore, similique
+              amet odit assumenda dolore voluptatibus vitae itaque ad ullam
+              facere blanditiis quasi deleniti facilis. Ex libero atque
+              perferendis repudiandae incidunt ullam. Reprehenderit aliquid aut
+              maiores dolores delectus facilis sit molestias repellendus?
+            </p>
+          </div>
+
+          <div class="para3">
+            <h2>Heading</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+              veniam, esse dolores quas ut voluptas ipsum aut tempore, similique
+              amet odit assumenda dolore voluptatibus vitae itaque ad ullam
+              facere blanditiis quasi deleniti facilis. Ex libero atque
+              perferendis repudiandae incidunt ullam. Reprehenderit aliquid aut
+              maiores dolores delectus facilis sit molestias repellendus?
+            </p>
+          </div>
+        </div>
+        <div class="para-body">
+          <div class="para2">
+            <h2>Heading</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+              veniam, esse dolores quas ut voluptas ipsum aut tempore, similique
+              amet odit assumenda dolore voluptatibus vitae itaque ad ullam
+              facere blanditiis quasi deleniti facilis. Ex libero atque
+              perferendis repudiandae incidunt ullam. Reprehenderit aliquid aut
+              maiores dolores delectus facilis sit molestias repellendus?
+            </p>
+          </div>
+
+          <div class="para3">
+            <h2>Heading</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+              veniam, esse dolores quas ut voluptas ipsum aut tempore, similique
+              amet odit assumenda dolore voluptatibus vitae itaque ad ullam
+              facere blanditiis quasi deleniti facilis. Ex libero atque
+              perferendis repudiandae incidunt ullam. Reprehenderit aliquid aut
+              maiores dolores delectus facilis sit molestias repellendus?
+            </p>
+          </div>
+        </div>
+        <div class="para-body">
+          <div class="para2">
+            <h2>Heading</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+              veniam, esse dolores quas ut voluptas ipsum aut tempore, similique
+              amet odit assumenda dolore voluptatibus vitae itaque ad ullam
+              facere blanditiis quasi deleniti facilis. Ex libero atque
+              perferendis repudiandae incidunt ullam. Reprehenderit aliquid aut
+              maiores dolores delectus facilis sit molestias repellendus?
+            </p>
+          </div>
+
+          <div class="para3">
+            <h2>Heading</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+              veniam, esse dolores quas ut voluptas ipsum aut tempore, similique
+              amet odit assumenda dolore voluptatibus vitae itaque ad ullam
+              facere blanditiis quasi deleniti facilis. Ex libero atque
+              perferendis repudiandae incidunt ullam. Reprehenderit aliquid aut
+              maiores dolores delectus facilis sit molestias repellendus?
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <h2>Sideber</h2>
+        <h3>Advertisement</h3>
+        <div class="box-body">
+          <div class="box"><h4>1</h4></div>
+          <div class="box"><h4>2</h4></div>
+          <div class="box"><h4>3</h4></div>
+          <div class="box"><h4>4</h4></div>
+          <div class="box"><h4>5</h4></div>
+          <div class="box"><h4>6</h4></div>
+        </div>
+        <!-- <div class="flex">
+          <div class="box"><h4>1</h4></div>
+          <div class="box"><h4>2</h4></div>
+        </div>
+        <div class="flex">
+          <div class="box"><h4>3</h4></div>
+
+          <div class="box"><h4>4</h4></div>
+        </div>
+        <div class="flex">
+          <div class="box"><h4>5</h4></div>
+          <div class="box"><h4>6</h4></div>
+        </div> -->
+      </div>
+    </main>
+  </body>
+</html>

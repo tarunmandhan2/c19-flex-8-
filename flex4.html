@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <base href="./img/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flex images flow</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        width: 1200px;
+        margin: auto;
+        height: 100vh;
+        background-color: #e0bdc2;
+      }
+      h1 {
+        background-color: #72035c;
+        margin-bottom: 23px;
+      }
+      .flex {
+        display: flex;
+        border: 1px solid;
+        padding: 10px;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        /* align-items: center; */
+      }
+      .images {
+        object-fit: contain;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Img flex flow</h1>
+      <div class="flex">
+        <div class="images">
+          <img src="1.jpg" alt="img2" width="500px" height="300px" />
+        </div>
+        <div class="images">
+          <img src="2.jpg" alt="img2" width="300px" height="300px" />
+        </div>
+        <div class="images">
+          <img src="3.webp" alt="img2" width="300px" height="500px" />
+        </div>
+        <div class="images">
+          <img src="4.jpg" alt="img2" width="300px" height="300px" />
+        </div>
+        <div class="images">
+          <img src="5.jpg" alt="img2" width="500px" height="300px" />
+        </div>
+        <div class="images">
+          <img src="6.webp" alt="img2" width="300px" height="300px" />
+        </div>
+        <div class="images">
+          <img src="7.webp" alt="img2" width="300px" height="500px" />
+        </div>
+        <div class="images">
+          <img src="8.webp" alt="img2" width="300px" height="300px" />
+        </div>
+        <div class="images">
+          <img src="9.webp" alt="img2" width="300px" height="500px" />
+        </div>
+        <div class="images">
+          <img src="10.jpg" alt="img2" width="300px" height="300px" />
+        </div>
+        <div class="images">
+          <img src="11.jpg" alt="img2" width="300px" height="300px" />
+        </div>
+        <div class="images">
+          <img src="12.jpg" alt="img2" width="500px" height="500px" />
+        </div>
+        <div class="images">
+          <img src="13.webp" alt="img2" width="300px" height="300px" />
+        </div>
+        <div class="images">
+          <img src="14.webp" alt="img2" width="300px" height="300px" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

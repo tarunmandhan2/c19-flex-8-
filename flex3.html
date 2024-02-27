@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flex 2</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        width: 1200px;
+        margin: auto;
+      }
+      main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      header h1 {
+        background-color: #585858;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      footer h1 {
+        background-color: #afafaf;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .section1 {
+        background-color: #c1c1fd;
+        width: 25%;
+        padding: 14rem 0;
+        text-align: center;
+      }
+      .section2 {
+        background-color: #fdc1e7;
+        padding: 14rem 0;
+        width: 50%;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Header ( 1200 )</h1>
+    </header>
+    <main>
+      <div class="section1">
+        <h2>
+          Aside <br />
+          ( 300 )
+        </h2>
+      </div>
+      <div class="section2">
+        <h2>
+          Section <br />
+          ( 600 )
+        </h2>
+      </div>
+      <div class="section1">
+        <h2>
+          Aside <br />
+          ( 300 )
+        </h2>
+      </div>
+    </main>
+    <footer><h1>Footer ( 1200 )</h1></footer>
+  </body>
+</html>
